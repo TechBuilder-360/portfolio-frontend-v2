@@ -1,0 +1,4 @@
+{
+    "git.verboseCommit": true,
+    "git.fetchOnPull": true
+}

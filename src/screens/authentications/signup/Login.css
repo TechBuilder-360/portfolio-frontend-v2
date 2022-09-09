@@ -1,0 +1,173 @@
+.background {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #ffffff 18.87%,
+      rgba(160, 152, 255, 0.58) 35.44%,
+      rgba(23, 3, 255, 0.54) 49.55%,
+      rgba(138, 128, 255, 0.58) 63.4%,
+      #ffffff 79.42%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  
+  @media screen and (min-width: 768px) {
+    .main {
+      padding: 0px 40px;
+      display: flex;
+      align-items: center;
+      height: 100vh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main {
+      padding: 0px 15px;
+    }
+  }
+  
+  .flex-form {
+    display: flex;
+  }
+  
+  .inputOne {
+    padding: 5px 3px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    outline: 1px solid rgba(0, 0, 0, 0.445);
+  
+    width: 100%;
+  }
+  @media screen and (min-width: 767px) {
+    #first-input {
+      padding: 5px 3px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.445);
+      outline: 1px solid rgba(0, 0, 0, 0.445);
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    #first-input {
+      padding: 5px 3px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 255, 0.774);
+      outline: none;
+      width: 100%;
+      background-color: rgba(128, 128, 128, 0.315);
+    }
+  }
+  
+  .form-main {
+    display: block;
+    margin: auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form {
+      background-color: rgba(128, 128, 128, 0.452);
+      width: 75%;
+      padding: 60px 40px 40px 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .form {
+      border-radius: 10px;
+      border: 1px solid blue;
+      background-color: white;
+      width: 100%;
+      padding: 15px 15px;
+      display: block;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .email {
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 10px;
+      padding: 5px 3px;
+      border: 1px solid rgba(0, 0, 255, 0.774);
+      outline: none;
+      background-color: rgba(128, 128, 128, 0.315);
+    }
+  }
+  @media screen and (min-width: 767px) {
+    .email {
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 10px;
+      padding: 5px 3px;
+      border: 1px solid rgba(0, 0, 0, 0.445);
+      outline: 1px solid rgba(0, 0, 0, 0.445);
+    }
+  }
+  
+  .submit {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 3px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: blue;
+  }
+  .borderlines {
+    width: 100%;
+  
+    margin: 20px 0px;
+    border-bottom: 1px black;
+    border-bottom-style: dashed;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 8px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.651);
+  }
+  @media screen and (min-width: 812px) {
+    .button-sec {
+      width: 100%;
+      padding: 8px 0px;
+      margin-top: 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.651);
+    }
+  }
+  @media screen and (max-width: 812px) {
+    .button-sec {
+      width: 100%;
+      padding: 8px 0px;
+      margin-top: 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.651);
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .button-sec {
+      width: 100%;
+      padding: 8px 0px;
+      margin-top: 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.651);
+      font-size: 14px;
+    }
+  }
+  
+  .icon {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+  }
+  
