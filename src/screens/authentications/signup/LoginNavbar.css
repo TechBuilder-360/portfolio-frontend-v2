@@ -1,0 +1,15 @@
+.country {
+    border: none;
+    outline: none;
+  }
+  .flex-prop {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .notification {
+    font-size: 25px;
+  }
+  

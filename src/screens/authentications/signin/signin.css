@@ -1,0 +1,103 @@
+.background {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 18.87%, rgba(160, 152, 255, 0.58) 35.44%, rgba(23, 3, 255, 0.54) 49.55%, rgba(138, 128, 255, 0.58) 63.4%, #FFFFFF 79.42%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  .form-main {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputMail {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 0px 5px 9px;
+    font-size: 16px;
+    border: 1px solid grey;
+    outline: none;
+  }
+  
+  .inputPassword {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 9px;
+    font-size: 16px;
+    margin-top: 15px;
+    border: 1px solid grey;
+    outline: none;
+    padding: 5px 0px 5px 9px;
+  }
+  
+  .form-content {
+    background-color: grey;
+    padding: 30px 40px;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #submit {
+    background-color: rgba(0, 0, 255, 0.822);
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 9px 0px;
+  }
+  
+  #content {
+    height: 100vh;
+  
+    justify-content: center;
+    position: relative;
+    top: -20px;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+  }
+  @media screen and (min-width: 966px) {
+    .text-color {
+      color: blue;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 25px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  
+    .button-one {
+      width: 100%;
+      padding: 8px 0px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.884);
+      word-spacing: 2px;
+      font-weight: bold;
+      color: grey;
+    }
+  }
+  
+  @media screen and (max-width: 966px) {
+  
+  
+    .text-color {
+      color: blue;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 25px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  
+    .button-one {
+      width: 100%;
+      padding: 8px 0px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.884);
+      word-spacing: 0px;
+      font-weight: bold;
+      color: grey;
+      font-size: 10px;
+    }
+  }
+  
