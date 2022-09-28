@@ -1,28 +1,78 @@
 .dash-form {
-    margin: 30px 50px 0px;
+  margin: 30px 50px 0px;
+}
+.show-form {
+  cursor:pointer;
+ 
+}
+
+#first-list {
+  background: #ffffff;
+  box-shadow: 3px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+.course-study {
+  font-size: 12px;
+}
+
+#icon-form {
+  align-items: center;
+}
+
+.school-image {
+  height: 50px;
+  padding-right: 2px;
+  position: relative;
+  top: -2px;
+}
+
+@media screen and (max-width: 480px) {
+  .dash-form {
+    margin: 30px 20px 0px;
   }
-  
-  #first-list {
-    background: #ffffff;
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+
+  #title {
+    font-size: 14px;
+    font-weight: bold;
   }
+}
+.titles {
+  font-size:14px;
+ 
   
-  .course-study {
-    font-size: 12px;
-  }
-  #icon-form {
-    align-items: center;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .dash-form {
-      margin: 30px 20px 0px;
-    }
-  
-    #title {
-      font-size: 14px;
-      font-weight: bold;
-    }
-  }
-  
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+
+line-height: 12px;
+
+color: #000000;
+}
+
+#project {
+  align-items:center;
+}
+.title-input {
+  background: rgba(217, 217, 217, 0.5);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+border: none;
+outline:none;
+padding-left:10px;
+width:70%;
+margin-left:7px;
+}
+
+.description-input {
+  background: rgba(217, 217, 217, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  height:40px;
+  width:80%;
+  border: none;
+  outline:none;
+  padding-left:10px;
+}
+.properties {
+  width:70%;
+}

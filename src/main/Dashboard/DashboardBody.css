@@ -1,41 +1,193 @@
 .upload-div {
-    height: 200px;
-    background-color: orange;
-    background: rgba(217, 217, 217, 0.5);
-    border-radius: 15px 15px 0px 0px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
+  height: 200px;
+  background-color: orange;
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 15px 15px 0px 0px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.main-body {
+  z-index:-1;
+}
+
+.rel {
+  position:relative;
+}
+.overlay {
   
+ 
+  width: 100%;
+  background: rgba(136, 136, 136, 0.5);
+  backdrop-filter: blur(10px);
+  
+  z-index:1;
+display:flex;
+align-items:center;
+
+  position: absolute;
+  top: 0px;
+  bottom: -130px;
+
+}
+
+.main-dashboard {
+  padding: 30px 50px 0px;
+  width: 100%;
+  display: flex;
+}
+
+#center-list {
+  justify-content: center;
+}
+
+.upload {
+  width: 70%;
+  background: #ffffff;
+  box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.plus-icon {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 116px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-border {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.507);
+  position: relative;
+  top: -50px;
+}
+
+.relative {
+  position: relative;
+  top: -50px;
+}
+
+.text-banner {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.main-details {
+  margin: 0px 50px;
+}
+
+.follow {
+  font-size: 14px;
+  color: #ff3d00;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+}
+.friends {
+  font-size: 14px;
+  padding-left: 14px;
+  color: #ff3d00;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+}
+
+.connect {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+#download {
+  background: #ff3d00;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.right-div {
+  background: #ececec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 30%;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.resume {
+  margin-left: auto;
+}
+
+.list-image {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+}
+.list-job {
+  font-size: 12px;
+}
+
+.message-button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  background: #d9d9d9;
+  border: 1px solid #ff3d00;
+  border-radius: 30px;
+  color: #000000;
+}
+
+.follow-button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  background: #ff3d00;
+  border-radius: 30px;
+  color: #000000;
+}
+@media screen and (max-width: 480px) {
   .main-dashboard {
-    padding: 30px 50px 0px;
+    padding: 30px 10px 0px;
     width: 100%;
     display: flex;
   }
-  
-  #center-list {
-    justify-content: center;
-  }
-  
-  .upload {
-    width: 70%;
-    background: #ffffff;
-    box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-  }
-  
+
   .plus-icon {
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 116px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+  .text-banner {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 29px;
+  }
+
   .image-border {
     border: 2px solid #ffffff;
     box-sizing: border-box;
@@ -46,182 +198,55 @@
     position: relative;
     top: -50px;
   }
-  
-  .relative {
-    position: relative;
-    top: -50px;
+
+  #social {
+    flex-direction: column;
   }
-  
-  .text-banner {
-    font-family: "Inter";
-    font-style: italic;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 29px;
-  }
-  
-  .main-details {
-    margin: 0px 50px;
-  }
-  
-  .follow {
-    font-size: 14px;
-    color: #ff3d00;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: bold;
-  }
-  .friends {
-    font-size: 14px;
-    padding-left: 14px;
-    color: #ff3d00;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: bold;
-  }
-  
-  .connect {
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 24px;
-  }
-  #download {
-    background: #ff3d00;
-    border-radius: 15px;
-    font-size: 14px;
-  }
-  
-  .right-div {
-    background: #ececec;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    width: 30%;
-    padding-bottom: 10px;
-    margin-left: 10px;
-  }
-  
+
   .resume {
-    margin-left: auto;
+    margin-left: 0;
+    margin-top: 8px;
   }
-  
-  .list-image {
-    width: 30px;
-    height: 30px;
-    background-color: grey;
-    border-radius: 50%;
+
+  #icons-menu {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .download {
+    display: none;
+  }
+  .main-details {
+    margin: 0px 10px;
+  }
+
+  .main-dashboard {
+    padding: 30px 20px 0px;
+    width: 100%;
     display: flex;
-    align-self: center;
   }
-  .list-job {
-    font-size: 12px;
+
+  .upload-div {
+    height: 100px;
+    background-color: orange;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 15px 15px 0px 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
-  
-  .message-button {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    background: #d9d9d9;
-    border: 1px solid #ff3d00;
-    border-radius: 30px;
-    color: #000000;
+
+  .right-div {
+    display: none;
   }
-  
-  .follow-button {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    background: #ff3d00;
-    border-radius: 30px;
-    color: #000000;
+
+  .upload {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
   }
-  @media screen and (max-width: 480px) {
-    .main-dashboard {
-      padding: 30px 10px 0px;
-      width: 100%;
-      display: flex;
-    }
-  
-    .plus-icon {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 116px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .text-banner {
-      font-family: "Inter";
-      font-style: italic;
-      font-weight: 200;
-      font-size: 16px;
-      line-height: 29px;
-    }
-  
-    .image-border {
-      border: 2px solid #ffffff;
-      box-sizing: border-box;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background-color: rgba(128, 128, 128, 0.507);
-      position: relative;
-      top: -50px;
-    }
-  
-    #social {
-      flex-direction: column;
-    }
-  
-    .resume {
-      margin-left: 0;
-      margin-top: 8px;
-    }
-  
-    #icons-menu {
-      justify-content: space-between;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .download {
-      display: none;
-    }
-    .main-details {
-      margin: 0px 10px;
-    }
-  
-    .main-dashboard {
-      padding: 30px 20px 0px;
-      width: 100%;
-      display: flex;
-    }
-  
-    .upload-div {
-      height: 100px;
-      background-color: orange;
-      background: rgba(217, 217, 217, 0.5);
-      border-radius: 15px 15px 0px 0px;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-    }
-  
-    .right-div {
-      display: none;
-    }
-  
-    .upload {
-      width: 100%;
-      background: #ffffff;
-      box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-    }
-  }
+}
+
   

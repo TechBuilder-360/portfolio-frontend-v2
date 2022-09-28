@@ -1,6 +1,9 @@
 import "./DashboardBody.css";
 import { useState } from "react";
-import { BiPlusMedical } from "react-icons/bi";
+import Modal from "../../components/Modal/eduModal";
+import { useDispatch } from "react-redux";
+import {BiPlusMedical} from "react-icons/bi";
+import { useSelector } from "react-redux";
 import { GrEdit } from "react-icons/gr";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
@@ -34,9 +37,15 @@ function DashboardBody() {
       job: "Writer|Blogger"
     }
   ]);
-
+  const dispatch = useDispatch();
+  const modalisOpened = useSelector((state) => state.firstModal);
   return (
-    <div>
+    <div className="rel">
+      {modalisOpened && (
+        <div className="overlay">
+          <Modal />
+        </div>
+      )}
       <div className="main-dashboard">
         <div className="upload">
           <div className="upload-div">
@@ -110,7 +119,7 @@ function DashboardBody() {
                   <div className="d-flex my-3" id="center-list">
                     <div className="list-image"></div>
                     <div className="ps-2">
-                      <div className="list-title fw-bold">{list.title}</div>
+                      <div className="list-title fw-bold">{list.title}</div>{" "}
                       <div className="list-job">{list.job}</div>
                     </div>
                   </div>

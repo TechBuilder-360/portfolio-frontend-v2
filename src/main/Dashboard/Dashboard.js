@@ -2,10 +2,13 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { AiFillHome } from "react-icons/ai";
 import { HiUsers } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
+import Modal from "../../components/Modal/eduModal";
 import { FaTable } from "react-icons/fa";
+
 import "./DashboardNav.css";
 import DashboardBody from "./DashboardBody";
 function Dashboard() {
+ 
   return (
     <div>
       <div className="main-body">
