@@ -12,10 +12,10 @@ state.list.education = [action.payload]
 },
 openModal(state,action) {
      
-  state.firstModal = true
+  state.firstModal = true;
 },
  closeModal(state,action) {
-      state.firstModal = false
+      state.firstModal = false;
      },
   }
 });
