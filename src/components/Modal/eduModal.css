@@ -1,82 +1,226 @@
 .form-pop {
-    width:80%;
-    background: #FFFFFF;
-    border-radius: 7.5px;
-    height:100%;
-    transform: translateY(170px);
-    }
-    
-    .exit-icon {
-    width:20px;
-    cursor:pointer;
-    }
-    
-    .overlay-form {
-    width:100%;
-    display:flex;
-    justify-content:center;
-    }
-    
-    .formpop-header {
-    display:flex;
-    justify-content:space-between;
-    padding:15px 30px;
-    border-bottom:1px solid black;
-    width:100%;
-    }
-    
-    .edu-form {
-    font-size:14px;
-    
-    }
-    
-    .institution-name {
+  width:80%;
+  background: #FFFFFF;
+  border-radius: 20.9006px;
+  height:100%;
+  transform: translateY(170px);
+  }
+  
+  .exit-icon {
+  width:20px;
+  cursor:pointer;
+  }
+  
+  .input_edu {
+    height:30px;
+    font-size:12px;
+    border: 4.09006px solid #767396;
+    border-radius: 12.2702px;
+  
+  }
+  
+  .overlay-form {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  }
+  
+  .formpop-header {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  
+  width:100%;
+  }
+  
+  .edu-form {
+  font-size:14px;
+  
+  }
+  
+  .institution-name {
+  display:block;
+  margin:auto;
+  width:90%;
+  
+  }
+  
+  .institution-end_name {
     display:block;
-    margin:auto;
-    width:90%;
+  margin:auto;
+  width:90%;
+  margin-bottom:10px;
+  justify-content: space-between;
+  
+  }
+  .institution-label {
+  font-size:20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  
+  }
+  
+  .start-input {
     
-    }
-    .institution-label {
-    font-size:13px;
-    }
-    
-    .institution-input {
-    display:block;
-    border: 1px solid #767396;
-    border-radius: 8px;
+    border: 3.09006px solid #767396;
+  border-radius: 12.2702px;
+  }
+  
+  .institution-input {
+  display:block;
+  border: 1px solid #767396;
+  border-radius: 8px;
+  width:100%;
+  outline:none;
+  padding-left:5px;
+  font-size:12px;
+  }
+  .check-text {
+    font-size:12px;
+  }
+  .form-check {
+  
+    margin-top:10px;
+  }
+  
+  .save-button {
+  
+    background: #1703FF;
+    border: 4.09006px solid #1703FF;
+    border-radius: 122.702px;
+  
+  padding:0px 16px;
+  color:white;
+  
+  }
+  
+  .save_btn_div {
+    margin-left:auto;
+  }
+  
+  .institution-end {
+    border: 3.09006px solid #767396;
+  border-radius: 8.2702px;
+  width:100%;
+  }
+  
+  .select-form {
     width:100%;
     outline:none;
-    padding-left:5px;
-    font-size:8px;
-    }
-    .check-text {
-      font-size:12px;
-    }
-    .form-check {
-    
-      margin-top:10px;
-    }
-    
-    .save-button {
-    
-    background: #1703FF;
-    border: 1px solid #1703FF;
-    border-radius: 30px;
-    display:block;
+   
+    font-size:13px;
+    height:34px;
+    border: 4.09006px solid #767396;
+  border-radius: 12.2702px;
+  }
+  
+  .institution-select {
+    font-size:13px;
+  }
+  
+  .flex-input {
+    display:flex;
+  }
+  
+  .check-box {
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    background: white;
+  appearance: none;
+  
+   
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .check-box:checked {
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #A39FC3;
+  }
+  
+  .check-div {
     margin-left:auto;
-    margin-top:30px;
-    padding:0px 16px;
-    color:white;
-    margin-bottom:20px;
-    }
-    
+  }
+  
+  
+  /* media screen for width(677px)*/
+  
+  @media screen and (max-width:677px) {
     .select-form {
       width:100%;
       outline:none;
-      border-radius:7px;
-      font-size:13px;
+     
+      font-size:12px;
+      height:34px;
+      border: 1px solid #767396;
+  border-radius: 3px;
+  }
+  
+  .formpop-header {
+    display:flex;
+    justify-content:space-between;
+    padding:15px 30px;
+    border-bottom: 1px solid black;
+    width:100%;
+  }
+  
+  
+  .start-input {
+    border: 1px solid #767396;
+    border-radius: 3px;
+    width:50%;
+  }
+  
+  .institution-end {
+    border: 1px solid #767396;
+    border-radius: 3px;
+    width:100%;
+   
+  }
+  
+  
+  
+   .flex_end {
+     width:50%;
+   }
+  .input_edu {
+    height:30px;
+    font-size:12px;
+    border: 1px solid #767396;
+    border-radius: 3px;
+  
+  }
+  
+  .form-pop {
+    width:80%;
+    background: #FFFFFF;
+  border-radius: 10px;
+    height:100%;
+    transform: translateY(170px);
     }
-    
-    .institution-select {
+  
+    .institution-label {
       font-size:13px;
-    }
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      
+      }
+  
+      .institution-end_name {
+        display:block;
+      margin:auto;
+      width:90%;
+      margin-bottom:20px;
+      justify-content: space-between;
+      
+      }
+  
+  
+  }
+  

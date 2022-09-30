@@ -43,18 +43,18 @@ function SignBody() {
               <div className="borderlines"></div>
 
               <button type="button" className="button-one">
-                <FcGoogle className="fs-4" />{" "}
+                <FcGoogle className="fs-4" />
                 <span className="ps-2">Log In with Google</span>
               </button>
               <button type="button" className="button-one mt-4">
-                <CgFacebook className="icon" />{" "}
+                <CgFacebook className="icon" />
                 <span className="ps-2">Log in with Facebook</span>
               </button>
             </form>
           </div>
           <div>
             <p className="text-center pt-4" style={{ cursor: "pointer" }}>
-              Don't have an account?{" "}
+              Don't have an account?
               <Link to="/login" className="text-decoration-none">
                 {" "}
                 <span className="text-primary fw-bold">Click here</span>

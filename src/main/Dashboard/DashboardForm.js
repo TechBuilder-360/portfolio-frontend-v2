@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BiPencil } from "react-icons/bi";
 import { FaSchool } from "react-icons/fa";
-import { userActions } from "../../store/reducer/index";
+import { userActions } from "../../store/reducer/dataSlice";
 import { GrDocumentPpt } from "react-icons/gr";
 function DashboardForm() {
   const dispatch = useDispatch();

@@ -1,9 +1,8 @@
-import "./eduModal.css";
-import { userActions } from "../../store/reducer/index";
+import "./Modal.css";
+import { userActions } from "../../store/reducer/dataSlice";
 import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
 function Modal() {
   const eduRef = useRef();
   const year = new Date();
@@ -14,6 +13,7 @@ function Modal() {
   const [institution, setInstitution] = useState();
   const [degree, setDegree] = useState();
   const [startDate, setStartDate] = useState();
+
   const [endDate, setEndDate] = useState();
   const [show, setShow] = useState(true);
   const firstModal = useSelector((state) => state.firstModal);
@@ -42,7 +42,8 @@ function Modal() {
   }
 
   function showEndDate() {
-    setShow(!show);
+    setShow(!show)
+   
   }
   return (
     <div className="overlay-form">
@@ -51,7 +52,7 @@ function Modal() {
           <div className="edu-form">Edit education</div>
           <div>
             <img
-              src="/images/exit icon.jpg"
+              src="exit icon.jpg"
               onClick={() => {
                 dispatch(userActions.closeModal());
               }}
@@ -63,17 +64,11 @@ function Modal() {
 
         <div className="institution-name">
           <label className="institution-label">Name of institution*</label>
-          
-
-<Form.Control
-        type="text"
-        id="inputPassword5"
-        aria-describedby="passwordHelpBlock"
-        onChange={onChangeHandler}  ref = {eduRef}  className="institution-text" placeholder="Ladoke Akintola University of Technologies"
-      />
-       
-      
-      
+        
+          <Form.Control type="text" name="edu-school"
+           onChange={onChangeHandler}
+            ref = {eduRef} className="input_edu" 
+             placeholder="Ladoke Akintola University of Technologies" />
         </div>
 
         <div className="institution-name">
@@ -94,38 +89,39 @@ function Modal() {
         </div>
 
         <div className="institution-name">
+         
           <label className="institution-label">Start date*</label>
+          <div className="flex-input">
           <input
             type="month"
             onChange={onChangeStartDate}
-            className="institution-input"
+            className="start-input"
             name="startdate"
           />
+         <div className="check-div">
+           <input type="checkbox" onClick = {showEndDate} className="check-box"/>
+           </div>
+          </div>
         </div>
 
-        {show && (
-          <div className="institution-name">
+       
+          <div className="institution-end_name">
+            
             <label className="institution-label">End date*</label>
+            <div className="flex-input">
+              <div className="flex_end">
             <input
               type="month"
+              style = {{opacity : show ? "0.2" : "1"}}
               onChange={onChangeEndDate}
-              className="institution-input"
+              className="institution-end"
               name="end-date"
+             disabled = {show}
             />
           </div>
-        )}
-        <div className="institution-name">
-          <div className="form-check">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              onClick={showEndDate}
-            />
-            <span className="check-text">Till date?</span>
-          </div>
-        </div>
-
-        <div className="institution-name">
+       
+      
+       <div className="save_btn_div">
           <button
             type="button"
             className="save-button"
@@ -143,8 +139,12 @@ function Modal() {
             Save
           </button>
         </div>
+        </div>
+        </div>
+        
       </div>
     </div>
   );
 }
 export default Modal;
+
