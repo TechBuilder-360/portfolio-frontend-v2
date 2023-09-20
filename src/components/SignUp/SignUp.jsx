@@ -11,7 +11,9 @@ import * as Yup from "yup";
 const validationSchema = Yup.object().shape({
   email: Yup.string()
     .email('Invalid email address')
-    .required('Email is required'),
+    .required('Email is required').test('has-at-symbol', 'Email must contain "@"', (value) => {
+        return value.includes('@');
+      }),
   password: Yup.string()
     .min(8, 'Password must be at least 8 characters')
     .required('Password is required'),
@@ -100,7 +102,7 @@ export default function SignUp() {
 
         <input type="submit" className='w-[100%] cursor-pointer max-w-[550px] mt-4 bg-[rgb(22,119,255)] text-white font-bold py-3 rounded-lg mx-auto block' value="Signup" />
 
-        <h1 className="text-[.9rem] mt-3 text-center text-gray-500  font-bold">Already have an account? <Link href="/" className="text-blue-500 font-bold">Login</Link></h1>
+        <h1 className="text-[.9rem] mt-3 text-center text-gray-500  font-bold">Already have an account? <Link href="/auth/SignIn" className="text-blue-500 font-bold">Login</Link></h1>
 
         <div className='flex gap-x-3 mt-3'>
           <div className="flex-1 border-[1.2px] border-b-gray-300 border-t-0 border-r-0 border-l-0 relative top-[-10px]"></div>

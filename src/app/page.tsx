@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import SingUp from "@/components/SignUp/SignUp"
+import SignUp from "@/components/SignUp/SignUp"
 export default function Home() {
   return (
    <>
-  <SingUp />
+  <SignUp />
    </>
   )
 
